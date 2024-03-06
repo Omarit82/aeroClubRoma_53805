@@ -36,11 +36,15 @@ body{
     background-image: url(../assets/img/fondo.jpg);
     background-position-x: center;
     height: 30rem;
-    .frase{
-        text-shadow: 2px 2px 2px black;
-        font-weight: bolder;
-        color: white;
-    }
+    
+}
+.sombra{
+    text-shadow: 2px 2px 2px black;
+    font-weight: bolder;
+    color: white;
+}
+.background{
+    background-color: rgb(35,35,35);
 }
 .text-justify{
     text-align: justify;
