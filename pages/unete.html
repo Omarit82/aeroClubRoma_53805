@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Aeroclub Roma</title>
+        <!-- Favicon-->
+        <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+        <link rel="stylesheet" href="../css/estilos.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <img class="headerLogo" src="../assets/img/logoAvion.png" alt="Logo del Aeroclub Roma">
+            <nav class="headerNav">
+                <ul class="listaNavegacion">
+                    <li class="navListItem"><a class="navListItem" href="../index.html">Inicio</a></li>
+                    <li class="navListItem"><a class="navListItem" href="aeronaves.html">Aeronaves</a></li>
+                    <li class="navListItem"><a class="navListItem" href="nosotros.html">Nosotros</a></li>
+                    <li class="navListItem"><a class="navListItem" href="ubicacion.html">Ubicacion</a></li>
+                    <li class="navListItem"><a class="navListItem" href="#">Unete!</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <h1>Comienza tu carrera aeronautica con nostros!</h1>
+            <section class="ubicacionColumna" >
+                <form class="vistaColumnaForm" action="">
+                    <h2 class="formularioCampo">Formulario de Admision: </h2>
+                    <label class="formularioCampo"for="nombre">Nombre</label>
+                    <input type="text" name="nombre" id="nombre"placeholder="Nombre">
+                    <label class="formularioCampo"for="apellido">Apellido</label>
+                    <input type="text" name="apellido" id="apellido"placeholder="Apellido">
+                    <label class="formularioCampo" for="email">Email</label>
+                    <input type="email" name="email" id="email"placeholder="Mi_Email@mail.com">
+                    <label class="formularioCampo" for="fechaNacimiento">Fecha de Nacimiento</label>
+                    <input type="date" name="fechaNacimiento" id="fechaNacimiento">
+                    <div class="formCheckbox">
+                        <h3 class="formularioCampo">Soy Piloto</h3>
+                        <label  for="siRadio">Si</label>
+                        <input type="radio" name="soyPiloto" id="siRadio" value="si" checked>
+                        <label  for="noRadio">No</label>
+                        <input type="radio" name="soyPiloto" id="noRadio" value="no">
+                    </div>
+                    <input type="submit" value="Enviar!" class="boton">
+                </form>
+            </section>
+            <section class="ubicacionColumna vistaColumnaForm"" >
+                <img src="../assets/img/sully.jpg" alt="Imagen del Capitan Sully Sullenberger">
+                <p>"Hoy, gracias al conocimiento ganado en esta escuela soy comandante en una de las principales Aerolíneas del mundo."</p>
+                <h3>Sully Sullenberger</h3>
+            </section>
+        </main>
+        <footer>
+            <section>
+                <p>Dirección: Via Salaria, 825, 00138 Roma RM, Italia</p>
+                <p>Provincia: Roma</p>
+                <p>Tel: +39 06 8120290 opp. +39 06 8120297</p>
+                <p>Email:info@aeroclubroma.it</p>
+            </section>
+            <section>
+                <h3>Encuentranos en nuestras redes sociales</h3>
+                    <section  class="logosRedes">
+                        <a href="./pages/404.html"><img src="../assets/img/facebook.png" alt="Logo Facebook" class="redSocial"></a>
+                        <a href="./pages/404.html"><img src="../assets/img/instagram.png" alt="Logo Instagram" class="redSocial"></a>
+                        <a href="./pages/404.html"><img src="../assets/img/linkedin.png" alt="Logo LinkedIn" class="redSocial"></a>
+                        <a href="./pages/404.html"><img src="../assets/img/twitter.png" alt="Logo Twitter" class="redSocial"></a>
+                    </section>
+                <a href="./pages/404.html"><img src="../assets/img/whatsapp.png" alt="Logo WhatsApp" class="redSocial libre"></a>
+            </section>
+            
+            <section>
+                <form action="">
+                    <label for="newsletter"> Suscribete a nuestro boletin!</label>
+                    <input type="email" name="newsletter" id="newsletter" placeholder="miEmail@email.com">
+                    <input class="boton" type="submit" value="Suscribirse">
+                </form>
+            </section>
+
+            <section>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d15391.863236392515!2d12.502839435291351!3d41.95332710953948!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2sar!4v1707585331016!5m2!1ses!2sar" width="250" height="150" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </section>
+        </footer>
+    </body>
+</html>
