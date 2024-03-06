@@ -38,6 +38,9 @@ body{
     height: 30rem;
     
 }
+.fondo{
+    background-image: url(../assets/img/fondo2.jpg);
+}
 .sombra{
     text-shadow: 2px 2px 2px black;
     font-weight: bolder;
@@ -45,6 +48,13 @@ body{
 }
 .background{
     background-color: rgb(35,35,35);
+}
+
+.grisTitulo{
+    background-color: rgb(99, 99, 99);
+    color:rgb(255,255,255);
+    text-align: center;
+    margin-bottom: 0;
 }
 .text-justify{
     text-align: justify;
@@ -80,6 +90,8 @@ footer{
         color: rgb(20,20,20);
     }
 }
+
+/* Media queries propias*/
 @media screen and (min-width: 650px){
     .presentacion{
         background-size: cover;
