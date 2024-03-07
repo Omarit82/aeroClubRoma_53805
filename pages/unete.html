@@ -45,33 +45,42 @@
         </header>
 
         <main>
-            <h1>Comienza tu carrera aeronautica con nostros!</h1>
-            <section class="ubicacionColumna" >
-                <form class="vistaColumnaForm" action="">
-                    <h2 class="formularioCampo">Formulario de Admision: </h2>
-                    <label class="formularioCampo"for="nombre">Nombre</label>
-                    <input type="text" name="nombre" id="nombre"placeholder="Nombre">
-                    <label class="formularioCampo"for="apellido">Apellido</label>
-                    <input type="text" name="apellido" id="apellido"placeholder="Apellido">
-                    <label class="formularioCampo" for="email">Email</label>
-                    <input type="email" name="email" id="email"placeholder="Mi_Email@mail.com">
-                    <label class="formularioCampo" for="fechaNacimiento">Fecha de Nacimiento</label>
-                    <input type="date" name="fechaNacimiento" id="fechaNacimiento">
-                    <div class="formCheckbox">
-                        <h3 class="formularioCampo">Soy Piloto</h3>
-                        <label  for="siRadio">Si</label>
-                        <input type="radio" name="soyPiloto" id="siRadio" value="si" checked>
-                        <label  for="noRadio">No</label>
-                        <input type="radio" name="soyPiloto" id="noRadio" value="no">
-                    </div>
-                    <input type="submit" value="Enviar!" class="boton">
-                </form>
-            </section>
-            <section class="ubicacionColumna vistaColumnaForm"" >
-                <img src="../assets/img/sully.jpg" alt="Imagen del Capitan Sully Sullenberger">
-                <p>"Hoy, gracias al conocimiento ganado en esta escuela soy comandante en una de las principales Aerolíneas del mundo."</p>
-                <h3>Sully Sullenberger</h3>
-            </section>
+            <h1 class="grisTitulo p-2">Comienza tu carrera aeronautica con nostros!</h1>
+            <div class="row">
+                <div class="col-6">
+                    <form class="vistaColumnaForm" action="">
+                        <h2 class="formularioCampo">Formulario de Admision: </h2>
+                        <label class="formularioCampo"for="nombre">Nombre</label>
+                        <input type="text" name="nombre" id="nombre"placeholder="Nombre">
+                        <label class="formularioCampo"for="apellido">Apellido</label>
+                        <input type="text" name="apellido" id="apellido"placeholder="Apellido">
+                        <label class="formularioCampo" for="email">Email</label>
+                        <input type="email" name="email" id="email"placeholder="Mi_Email@mail.com">
+                        <label class="formularioCampo" for="fechaNacimiento">Fecha de Nacimiento</label>
+                        <input type="date" name="fechaNacimiento" id="fechaNacimiento">
+                        <div class="formCheckbox">
+                            <h3 class="formularioCampo">Soy Piloto</h3>
+                            <label  for="siRadio">Si</label>
+                            <input type="radio" name="soyPiloto" id="siRadio" value="si" checked>
+                            <label  for="noRadio">No</label>
+                            <input type="radio" name="soyPiloto" id="noRadio" value="no">
+                        </div>
+                        <input type="submit" value="Enviar!" class="boton">
+                    </form>
+                </div> 
+                <div class="col-6">
+                    <div class="card m-3" style="width: 25rem;">
+                        <img src="../assets/img/sully.jpg" alt="Imagen del Capitan Sully Sullenberger" class="w-50">
+                        <div class="card-body">
+                            <h3 class="card-title">Sully Sullenberger</h3>
+                            <p class="card-text">"Hoy, gracias al conocimiento ganado en esta escuela soy comandante en una de las principales Aerolíneas del mundo."</p>
+                        </div>
+                      </div>
+                    
+                    
+                    
+                </div>
+            </div>
         </main>
         <footer>
             <div class="container-fluid">
