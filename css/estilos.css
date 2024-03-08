@@ -21,14 +21,14 @@ body{
         }
     }
     .linkColor{
-        color: white;
+        color: rgb(255,255,255);
     }
     .burger{
         background-image: url(../assets/img/burger.png);
     }
     .colorBurger{
-        color: white;
-        border-color:1px 1px solid white;
+        color: rgb(255,255,255);
+        border-color:1px 1px solid rgb(255,255,255);
     }
 }
 
@@ -36,16 +36,21 @@ body{
     background-image: url(../assets/img/fondo.jpg);
     background-position-x: center;
     height: 30rem;
-    
+    .sombra{
+        text-shadow: 2px 2px 2px black;
+        font-weight: bolder;
+        color: rgb(255,255,255);
+    }
+    .titulo{
+        font-size: 37px;
+    }
 }
 .fondo{
     background-image: url(../assets/img/fondo2.jpg);
+    background-size: cover;
+    background-position: center;
 }
-.sombra{
-    text-shadow: 2px 2px 2px black;
-    font-weight: bolder;
-    color: white;
-}
+
 .background{
     background-color: rgb(35,35,35);
 }
@@ -54,25 +59,22 @@ body{
     background-color: rgb(99, 99, 99);
     color:rgb(255,255,255);
     text-align: center;
-    margin-bottom: 0;
 }
 .text-justify{
     text-align: justify;
 }
-
-.mision{
-    font-size: 25px;
-    hr{
-        color:rgb(35,35,35);
-        background-color: rgb(35,35,35);
-    }
+.tamanio{
+    font-size:18px;
 }
+
+hr{
+    color:rgb(35,35,35);
+    background-color: rgb(35,35,35);
+}
+
 .textoClaro{
     background-color: rgb(99, 99, 99);
     color:rgb(255,255,255);
-    h2{
-        font-size: 40px;
-    }
 }
 .btn{
     border-radius: 0;
@@ -82,6 +84,7 @@ body{
     background-color: transparent;
     color:white;
 }
+
 footer{
     background-color: rgb(35,35,35);
     color:rgb(255,255,255);
@@ -98,11 +101,11 @@ footer{
         background-position: center;
         background-attachment: fixed;
         height:100vh;
+        .titulo{
+            font-size: 46px;
+        }
     }
-    .frase{
-        font-size: 28px;
-    }
-    .titulo{
-        font-size: 45px;
+    .tamanio{
+        font-size: 23px;
     }
 }
