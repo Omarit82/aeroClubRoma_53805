@@ -75,6 +75,10 @@ hr{
 .textoClaro{
     background-color: rgb(99, 99, 99);
     color:rgb(255,255,255);
+    .size{
+        width: 100%;
+        object-fit: cover;
+    }
 }
 .btn{
     border-radius: 0;
