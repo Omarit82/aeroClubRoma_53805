@@ -12,7 +12,7 @@ body{
     .colorListItem{
         text-decoration: none;
         &:hover{
-            box-shadow: 0px 10px 10px rgba(71, 71, 71,0.3);
+            box-shadow: 0px 10px 10px rgba(10,10,10, 0.3);
 
         }
         &:active{
@@ -37,7 +37,7 @@ footer{
     color:rgb(255,255,255);
     .suscribirse{
         background-color: rgb(99, 99, 99);
-        color: rgb(20,20,20);
+        color: rgb(10,10,10);
     }
 }
         /* index */
@@ -74,12 +74,12 @@ footer{
 }
 
 hr{
-    color:rgb(35,35,35);
-    background-color: rgb(35,35,35);
+    color:rgb(10,10,10);;
+    background-color: rgb(10,10,10);;
 }
 /* Aeronaves */
 .background{
-    background-color: rgb(35,35,35);
+    background-color: rgb(10,10,10);;
 }
 
 /*Nosotros*/
@@ -118,6 +118,9 @@ hr{
 .btn{
     border-radius: 0;
     background-color: rgb(35,35,35);
+    &:hover{
+        background-color: rgb(10,10,10);
+    }
 }
 .list-group-item{
     background-color: transparent;
