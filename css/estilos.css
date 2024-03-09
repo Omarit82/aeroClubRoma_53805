@@ -58,6 +58,9 @@ footer{
         font-size: 37px;
     }
 }
+.link{
+    text-decoration: none;
+}
 .tamanio{
     font-size:18px;
 }
