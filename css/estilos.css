@@ -8,15 +8,16 @@ body{
 }
         /* header */
 .colorHeader{
-    background-color: #2c2c2c;    
+    background-color: #2c2c2c; 
     .colorListItem{
         text-decoration: none;
         &:hover{
-            background-color: rgb(99, 99, 99);
+            box-shadow: 0px 10px 10px rgba(71, 71, 71,0.3);
+
         }
         &:active{
             background-color: rgb(87, 87, 87);
-            box-shadow: rgb(71, 71, 71) 0px 4px 8px;
+            box-shadow: rgb(71, 71, 71) 0px 10px 10px;
         }
     }
     .linkColor{

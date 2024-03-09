@@ -16,12 +16,12 @@
 
         <header class="colorHeader">
             <nav class="navbar navbar-expand-lg">
-                <div class="container-fluid">
-                    <img class="navbar-brand col-8 col-md-3 p-3 ps-5" src="../assets/img/logoAvion.png" alt="Logo del Aeroclub Roma">
-                    <button class="navbar-toggler colorBurger" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <div class="row m-0 justify-content-around">
+                    <img class="navbar-brand col-7 col-md-3 ps-3 me-5" src="../assets/img/logoAvion.png" alt="Logo del Aeroclub Roma">
+                    <button class="navbar-toggler colorBurger col-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon burger"></span>
                     </button>
-                    <div class="collapse navbar-collapse col-9 fs-4 " id="navbarSupportedContent">
+                    <div class="collapse navbar-collapse col-3 fs-4" id="navbarSupportedContent">
                         <ul class="navbar-nav me-auto mb-2 mb-lg-0 w-100 justify-content-around">
                             <li class="nav-item colorListItem">
                                 <a class="nav-link linkColor fw-bolder" href="../index.html">Inicio</a>
@@ -30,13 +30,13 @@
                                 <a class="nav-link linkColor fw-bolder" href="#">Aeronaves</a>
                             </li>
                             <li class="nav-item colorListItem">
-                                <a class="nav-link linkColor fw-bolder" href="../pages/nosotros.html">Nosotros</a>
+                                <a class="nav-link linkColor fw-bolder" href="./nosotros.html">Nosotros</a>
                             </li>
                             <li class="nav-item colorListItem">
-                                <a class="nav-link linkColor fw-bolder" href="../pages/ubicacion.html">Ubicacion</a>
+                                <a class="nav-link linkColor fw-bolder" href="./ubicacion.html">Ubicacion</a>
                             </li>
                             <li class="nav-item colorListItem">
-                                <a class="nav-link linkColor fw-bolder" href="../pages/unete.html">Unete!</a>
+                                <a class="nav-link linkColor fw-bolder" href="./unete.html">Unete!</a>
                             </li>
                         </ul>
                     </div>
@@ -47,7 +47,8 @@
         <main>
             <h1 class="grisTitulo p-2 mb-0">Nuestras Aeronaves:</h1>
             <section>
-                <div class="container-fluid gx-0">
+                <div class="container gx-0">
+                    <!-- Carousel para mobile-->
                     <div id="carouselExampleCaptions" class="carousel slide sombra d-md-none">
                         <div class="carousel-indicators">
                             <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -123,8 +124,9 @@
                             </button>
                         </div>
                     </div>
+                    <!-- Cards para escritorio-->
                     <div class=" d-none d-md-flex flex-column fondo">
-                        <div class="row justify-content-evenly">
+                        <div class="row justify-content-evenly container-fluid">
                             <div class="card m-2 pt-2" style="width: 18rem;">
                                 <img src="../assets/img/avion1.jpg" class="card-img-top" alt="Aeronave Da42 TwinStar en plataforma de Roma-Ciampino">
                                 <div class="card-body">
@@ -158,9 +160,8 @@
                                     </ul>
                                 </div>
                             </div>
-                        </div>
-                        
-                        <div class="row justify-content-evenly">
+                        </div> 
+                        <div class="row justify-content-evenly container-fluid">
                             <div class="card  m-2 pt-2" style="width: 18rem;">
                                 <img src="../assets/img/avion4.jpg" class="card-img-top" alt="Aeronave Cessna 177 en vuelo sobre el campo romano">
                                 <div class="card-body">

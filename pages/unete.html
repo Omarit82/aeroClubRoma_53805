@@ -16,24 +16,24 @@
 
         <header class="colorHeader">
             <nav class="navbar navbar-expand-lg">
-                <div class="container-fluid">
-                    <img class="navbar-brand col-8 col-md-3 p-3 ps-5" src="../assets/img/logoAvion.png" alt="Logo del Aeroclub Roma">
-                    <button class="navbar-toggler colorBurger" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <div class="row m-0 justify-content-around">
+                    <img class="navbar-brand col-7 col-md-3 ps-3 me-5" src="../assets/img/logoAvion.png" alt="Logo del Aeroclub Roma">
+                    <button class="navbar-toggler colorBurger col-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon burger"></span>
                     </button>
-                    <div class="collapse navbar-collapse col-9 fs-4 " id="navbarSupportedContent">
+                    <div class="collapse navbar-collapse col-3 fs-4" id="navbarSupportedContent">
                         <ul class="navbar-nav me-auto mb-2 mb-lg-0 w-100 justify-content-around">
                             <li class="nav-item colorListItem">
                                 <a class="nav-link linkColor fw-bolder" href="../index.html">Inicio</a>
                             </li>
                             <li class="nav-item colorListItem">
-                                <a class="nav-link linkColor fw-bolder" href="../pages/aeronaves.html">Aeronaves</a>
+                                <a class="nav-link linkColor fw-bolder" href="./aeronaves.html">Aeronaves</a>
                             </li>
                             <li class="nav-item colorListItem">
-                                <a class="nav-link linkColor fw-bolder" href="../pages/nosotros.html">Nosotros</a>
+                                <a class="nav-link linkColor fw-bolder" href="./nosotros.html">Nosotros</a>
                             </li>
                             <li class="nav-item colorListItem">
-                                <a class="nav-link linkColor fw-bolder" href="../pages/ubicacion.html">Ubicacion</a>
+                                <a class="nav-link linkColor fw-bolder" href="./ubicacion.html">Ubicacion</a>
                             </li>
                             <li class="nav-item colorListItem">
                                 <a class="nav-link linkColor fw-bolder" href="#">Unete!</a>
@@ -44,22 +44,22 @@
             </nav>
         </header>
 
-        <main>
+        <main class="fondo">
             <h1 class="grisTitulo p-2">Comienza tu carrera aeronautica con nostros!</h1>
-            <div class="row">
-                <div class="col-6">
-                    <form class="vistaColumnaForm" action="">
-                        <h2 class="formularioCampo">Formulario de Admision: </h2>
-                        <label class="formularioCampo"for="nombre">Nombre</label>
+            <div class="row container-fluid">
+                <div class="col-10 col-md-5 m-auto">
+                    <form class="textoClaro" action="">
+                        <h2 class="">Formulario de Admision: </h2>
+                        <label class=""for="nombre">Nombre</label>
                         <input type="text" name="nombre" id="nombre"placeholder="Nombre">
-                        <label class="formularioCampo"for="apellido">Apellido</label>
+                        <label class=""for="apellido">Apellido</label>
                         <input type="text" name="apellido" id="apellido"placeholder="Apellido">
-                        <label class="formularioCampo" for="email">Email</label>
+                        <label class="" for="email">Email</label>
                         <input type="email" name="email" id="email"placeholder="Mi_Email@mail.com">
-                        <label class="formularioCampo" for="fechaNacimiento">Fecha de Nacimiento</label>
+                        <label class="" for="fechaNacimiento">Fecha de Nacimiento</label>
                         <input type="date" name="fechaNacimiento" id="fechaNacimiento">
                         <div class="formCheckbox">
-                            <h3 class="formularioCampo">Soy Piloto</h3>
+                            <h3 class="">Soy Piloto</h3>
                             <label  for="siRadio">Si</label>
                             <input type="radio" name="soyPiloto" id="siRadio" value="si" checked>
                             <label  for="noRadio">No</label>
@@ -68,10 +68,10 @@
                         <input type="submit" value="Enviar!" class="boton">
                     </form>
                 </div> 
-                <div class="col-6">
-                    <div class="card m-3" style="width: 25rem;">
-                        <img src="../assets/img/sully.jpg" alt="Imagen del Capitan Sully Sullenberger" class="w-50">
-                        <div class="card-body">
+                <div class="col-10 col-md-5 m-auto">
+                    <div class="card mt-3 mb-3">
+                        <img src="../assets/img/sully.jpg" alt="Imagen del Capitan Sully Sullenberger" class="w-50 m-auto">
+                        <div class="card-body textoClaro">
                             <h3 class="card-title">Sully Sullenberger</h3>
                             <p class="card-text">"Hoy, gracias al conocimiento ganado en esta escuela soy comandante en una de las principales Aerolíneas del mundo."</p>
                         </div>
