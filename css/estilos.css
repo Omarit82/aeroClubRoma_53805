@@ -5,9 +5,8 @@
 
 body{
     font-family: 'Raleway', sans-serif;
-    overflow-x: hidden;
 }
-
+        /* header */
 .colorHeader{
     background-color: #2c2c2c;    
     .colorListItem{
@@ -31,7 +30,16 @@ body{
         border-color:1px 1px solid rgb(255,255,255);
     }
 }
-
+        /*Footer*/
+footer{
+    background-color: rgb(35,35,35);
+    color:rgb(255,255,255);
+    .suscribirse{
+        background-color: rgb(99, 99, 99);
+        color: rgb(20,20,20);
+    }
+}
+        /* index */
 .presentacion{
     background-image: url(../assets/img/fondo.jpg);
     background-position-x: center;
@@ -45,60 +53,10 @@ body{
         font-size: 37px;
     }
 }
-.fondo{
-    background-image: url(../assets/img/fondo2.jpg);
-    background-size: cover;
-    background-position: center;
-}
-
-.background{
-    background-color: rgb(35,35,35);
-}
-
-.grisTitulo{
-    background-color: rgb(99, 99, 99);
-    color:rgb(255,255,255);
-    text-align: center;
-}
-.text-justify{
-    text-align: justify;
-}
 .tamanio{
     font-size:18px;
 }
-
-hr{
-    color:rgb(35,35,35);
-    background-color: rgb(35,35,35);
-}
-
-.textoClaro{
-    background-color: rgb(99, 99, 99);
-    color:rgb(255,255,255);
-    .size{
-        width: 100%;
-        object-fit: cover;
-    }
-}
-.btn{
-    border-radius: 0;
-    background-color: rgb(35,35,35);
-}
-.list-group-item{
-    background-color: transparent;
-    color:white;
-}
-
-footer{
-    background-color: rgb(35,35,35);
-    color:rgb(255,255,255);
-    .suscribirse{
-        background-color: rgb(99, 99, 99);
-        color: rgb(20,20,20);
-    }
-}
-
-/* Media queries propias*/
+/* Media queries index*/
 @media screen and (min-width: 650px){
     .presentacion{
         background-size: cover;
@@ -113,3 +71,57 @@ footer{
         font-size: 23px;
     }
 }
+
+hr{
+    color:rgb(35,35,35);
+    background-color: rgb(35,35,35);
+}
+/* Aeronaves */
+.background{
+    background-color: rgb(35,35,35);
+}
+
+/*Nosotros*/
+
+
+        /** Clases Utilitarias**/
+
+.fondo{
+    background-image: url(../assets/img/fondo2.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+}
+/* Titulos h1*/
+.grisTitulo{
+    background-color: rgb(99, 99, 99);
+    color:rgb(255,255,255);
+    text-align: center;
+}
+.text-justify{
+    text-align: justify;
+}
+
+.textoClaro{
+    background-color: rgb(99, 99, 99);
+    color:rgb(255,255,255);
+    .size{
+        width: 100%;
+        object-fit: cover;
+    }
+    hr{
+        background-color: rgb(255,255,255);
+        color: rgb(255,255,255);
+    }
+}
+.btn{
+    border-radius: 0;
+    background-color: rgb(35,35,35);
+}
+.list-group-item{
+    background-color: transparent;
+    color:white;
+}
+
+
+
