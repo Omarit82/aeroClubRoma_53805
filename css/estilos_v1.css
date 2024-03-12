@@ -1,217 +1,143 @@
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+}
+
+body{
     font-family: 'Raleway', sans-serif;
 }
-a{
-    text-decoration: none;
-    padding: 15px;
-    &:hover{
-        background-color: rgb(99, 99, 99);
-    }
-    &:active{
-        background-color: rgb(87, 87, 87);
-        box-shadow: rgb(71, 71, 71) 0px 4px 8px;
-    }
-}
-p{
-    padding: 5px;
-}
-/*Header*/
-header{
-    width: 100%;
-    background-color: rgb(35, 35, 35);
-    color: white;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    .headerNav{
-        display: flex;
-        align-items: center;
-        width: 70%;
-        .listaNavegacion{
-            width: 100%;
-            display: flex;
-            justify-content: space-around;
+
+/* header */
+
+.colorHeader{
+    background-color: #2c2c2c; 
+    .colorListItem{
+        text-decoration: none;
+        &:hover{
+            box-shadow: 0px -35px 35px -28px rgba(85,85,85,0.45) inset;
         }
-        .navListItem{
-            font-size: 25px;
-            list-style: none;
-            margin: 5px;
-            color: white;
+        &:active{
+            box-shadow: rgb(85, 85, 85) 0px 20px 15px -10px;
         }
-        
     }
-    .headerLogo {
-        padding: 25px;
-        height:120px;
+    .linkColor{
+        color: rgb(255,255,255);
     }
-    
+    .burger{
+        background-image: url(../assets/img/burger.png);
+    }
+    .colorBurger{
+        color: rgb(255,255,255);
+        border-color:1px 1px solid rgb(255,255,255);
+    }
 }
 
+/*Footer*/
+
+footer{
+    background-color: rgb(35,35,35);
+    color:rgb(255,255,255);
+    .suscribirse{
+        background-color: rgb(99, 99, 99);
+        color: rgb(10,10,10);
+    }
+}
+
+/* index */
 
 .presentacion{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     background-image: url(../assets/img/fondo.jpg);
-    background-size:cover ;
-    background-attachment: fixed;
-    height: 100vh;
-    padding: 260px 0;
-    overflow: hidden;
-    .frase{
-        font-size: 28px;
+    background-position-x: center;
+    height: 30rem;
+    .sombra{
         text-shadow: 2px 2px 2px black;
-        font-weight: bold;
-        color: white;
-        margin: 30px;
+        font-weight: bolder;
+        color: rgb(255,255,255);
     }
-    .autor{
-        text-align: end;
-        margin-right: 75px;
+    .titulo{
+        font-size: 37px;
     }
-    .misionTitulo{
-    font-size: 40px;
+}
+.link{
+    text-decoration: none;
+}
+.tamanio{
+    font-size:18px;
+}
+/* Media queries index*/
+@media screen and (min-width: 650px){
+    .presentacion{
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        height:100vh;
+        .titulo{
+            font-size: 46px;
+        }
+    }
+    .tamanio{
+        font-size: 23px;
     }
 }
 
-.mision{
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-    width: 75%;
-    .misionTexto{
-        text-align: justify;
-        font-size: 25px;
-        margin: 20px;
-        padding: 10px;
+hr{
+    color:rgb(10,10,10);;
+    background-color: rgb(10,10,10);;
+}
+
+/* Aeronaves */
+
+.background{
+    background-color: rgb(10,10,10);;
+}
+.carousel-caption{
+    .sombra{
+        text-shadow: 4px 2px 2px black;
+        font-weight: bolder;
+        color: rgb(255, 255, 255);
+    }
+}
+/** Clases Utilitarias**/
+
+.fondo{
+    background-image: url(../assets/img/fondo2.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+}
+/* Titulos h1*/
+.grisTitulo{
+    background-color: rgb(99, 99, 99);
+    color:rgb(255,255,255);
+    text-align: center;
+}
+.text-justify{
+    text-align: justify;
+}
+
+.textoClaro{
+    background-color: rgb(99, 99, 99);
+    color:rgb(255,255,255);
+    .size{
+        width: 100%;
+        object-fit: cover;
     }
     hr{
-        color: rgb(35, 35, 35);
-        background-color: rgb(35, 35, 35);
-        width: 75%;
-        height: 3px;
-        margin: auto;
+        background-color: rgb(255,255,255);
+        color: rgb(255,255,255);
     }
+}
+.btn{
+    border-radius: 0;
+    background-color: rgb(35,35,35);
+    &:hover{
+        background-color: rgb(10,10,10);
+    }
+}
+.list-group-item{
+    background-color: transparent;
+    color:white;
 }
 
-.cursosDisponibles{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 15px 20%;
-    background-color: rgb(99, 99, 99);
-    color: rgb(255, 255, 255);
-    h2{
-        font-size: 40px;
-        margin: 30px;
-    }
-    .curso{
-        padding: 15px;
-        font-size: 20px;
-        text-align: justify;
-    }
-    .botonCurso{
-        background-color: rgb(35, 35, 35);
-        color:white;
-        padding: 10px 20px;
-        margin-top:15px;
-    }
-    .textoCurso{
-        text-align: justify;
-    }
-}
-/*Footer*/
-footer{
-    width: 100%;
-    background-color: rgb(35, 35, 35);
-    color: white;
-    display: flex;
-    justify-content: space-around;
-    align-items:start;
-    padding-top: 15px;
-    .logosRedes{
-        display: flex;
-        align-items: start;
-        .redSocial{
-            height: 50px;
-            padding: 5px;
-        }
-    }
-    section{
-        padding: 10px;
-        width: 22%;
-    }   
-    form{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-        align-items: center;
-        label{
-            text-align: center;
-            margin-bottom: 10px;
-        }
-        input{
-            max-width: 70%;
-            background-color: rgb(190, 190, 190);
-            color: rgb(35, 35, 35);
-        }
-        .boton{
-            background-color: rgb(190, 190, 190);
-            color: rgb(35, 35, 35);
-            font-weight: bold;
-            margin:25px;
-            padding:10px;
-        }
-    }
-}
-
-.libre{
-    position: fixed;
-    bottom: 2%;
-    right: 2%;
-    height: 50px;
-}
-
-
-.ubicacionColumna{
-    display: inline-block;
-    width: 49%;
-    padding: 20px;
-}
-.cartaAerodromo{
-    width: 75%;
-}
-.vistaAerea{
-    width: 75%;
-}
-.mapa{
-    background-color: lightgray;
-    border-radius: 5px;
-    margin-bottom: 50px;
-}
-
-
-.vistaColumnaForm{
-    background-color: lightgrey;
-    border-radius: 15px;
-    .formularioCampo{
-        display: block;
-        margin: 25px;
-        padding: 10px;
-        .formCheckbox{
-            margin: 25px;
-            padding: 10px;
-               
-        }
-    }
-}
-
-.boton{
-   
-    
-}
 
 
