@@ -1,0 +1,43 @@
+.boton{
+    color:white;
+    background-color: black;
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid black;
+}
+
+.boton--aceptar{
+    @extend .boton;
+    background-color: green;
+    border: 5px solid darkgreen;
+}
+
+.boton--cancelar{
+    @extend .boton;
+    background-color: red;
+    border: 5px solid darkred;
+}
+/* for each mapping extends herencia*/
+
+@mixin boton{
+    color:white;
+    background-color: yellow;
+
+}
+
+.boton-otro{
+    @include boton;
+}
+
+/*mixing con parametros*/
+
+@mixin contenedor($colorFuente, $colorFondo, $tamanoFuente, $espaciado){
+    color: $colorFuente;
+    background-color: $colorFondo;
+    font-size: $tamanoFuente;
+    padding: $espaciado;
+}
+
+.alert-primary {
+    @include contenedor(blue, lightblue, 16px,25px)
+}
