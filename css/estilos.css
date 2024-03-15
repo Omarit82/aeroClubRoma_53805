@@ -47,17 +47,22 @@ footer{
 
 .presentacion{
     background-image: url(../assets/img/fondo.jpg);
+    background-color: rgba(255, 255, 255, 0.507);
+    background-color: rgba(0, 0, 0, 0.55);
+    background-blend-mode: overlay;
     background-position-x: center;
     height: 30rem;
     .sombra{
         text-shadow: 2px 2px 2px black;
         font-weight: bolder;
         color: rgb(255,255,255);
+        
     }
     .titulo{
         font-size: 37px;
     }
 }
+  
 .link{
     text-decoration: none;
 }
@@ -95,6 +100,7 @@ hr{
         text-shadow: 4px 2px 2px black;
         font-weight: bolder;
         color: rgb(255, 255, 255);
+        background-color: rgba(0, 0, 0, 0.4);
     }
 }
 /** Clases Utilitarias**/
