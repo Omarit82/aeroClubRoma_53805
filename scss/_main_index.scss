@@ -1,0 +1,49 @@
+/* index */
+main{
+    .presentacion{
+        background-image: url(../assets/img/fondo.jpg);
+        background-color: $transparencia;
+        background-blend-mode: overlay;
+        background-position-x: center;
+        height: 30rem;
+        .sombra{
+            text-shadow: 2px 2px 2px black;
+            font-weight: bolder;
+            color: $color-texto-claro;
+            
+        }
+        .titulo{
+            font-size: 37px;
+        }
+    }
+     
+    .link{
+        text-decoration: none;
+    }
+    
+    .tamanio{
+        font-size:18px;
+    }
+    
+    hr{
+        color:$color-oscuro;
+        background-color: $color-oscuro;
+    }
+    
+    /* Media queries index*/
+    @media screen and (min-width: 650px){
+        .presentacion{
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            height:100vh;
+            .titulo{
+                font-size: 46px;
+            }
+        }
+        .tamanio{
+            font-size: 23px;
+        }
+    }
+    
+}

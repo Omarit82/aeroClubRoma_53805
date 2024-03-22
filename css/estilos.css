@@ -1,33 +1,145 @@
-.boton, .boton--cancelar, .boton--aceptar {
-  color: white;
-  background-color: black;
-  padding: 20px;
-  border-radius: 8px;
-  border: 1px solid black;
+/* Variables*/
+* {
+  margin: 0;
+  padding: 0;
 }
 
-.boton--aceptar {
-  background-color: green;
-  border: 5px solid darkgreen;
+body {
+  font-family: "Raleway", sans-serif;
 }
 
-.boton--cancelar {
-  background-color: red;
-  border: 5px solid darkred;
+/* header */
+.colorHeader {
+  background-color: rgb(35, 35, 35);
+}
+.colorHeader .colorListItem {
+  text-decoration: none;
+}
+.colorHeader .colorListItem:hover {
+  box-shadow: 0px -35px 35px -28px rgba(85, 85, 85, 0.45) inset;
+}
+.colorHeader .colorListItem:active {
+  box-shadow: rgb(85, 85, 85) 0px 20px 15px -10px;
+}
+.colorHeader .linkColor {
+  color: rgb(255, 255, 255);
+}
+.colorHeader .burger {
+  background-image: url(../assets/img/burger.png);
+}
+.colorHeader .colorBurger {
+  color: rgb(255, 255, 255);
+  border-color: 1px 1px solid rgb(255, 255, 255);
 }
 
-/* for each mapping extends herencia*/
-.boton-otro {
-  color: white;
-  background-color: yellow;
+/* index */
+main {
+  /* Media queries index*/
+}
+main .presentacion {
+  background-image: url(../assets/img/fondo.jpg);
+  background-color: rgba(0, 0, 0, 0.5);
+  background-blend-mode: overlay;
+  background-position-x: center;
+  height: 30rem;
+}
+main .presentacion .sombra {
+  text-shadow: 2px 2px 2px black;
+  font-weight: bolder;
+  color: rgb(255, 255, 255);
+}
+main .presentacion .titulo {
+  font-size: 37px;
+}
+main .link {
+  text-decoration: none;
+}
+main .tamanio {
+  font-size: 18px;
+}
+main hr {
+  color: rgb(10, 10, 10);
+  background-color: rgb(10, 10, 10);
+}
+@media screen and (min-width: 650px) {
+  main .presentacion {
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 100vh;
+  }
+  main .presentacion .titulo {
+    font-size: 46px;
+  }
+  main .tamanio {
+    font-size: 23px;
+  }
 }
 
-/*mixing con parametros*/
-.alert-primary {
-  color: blue;
-  background-color: lightblue;
-  font-size: 16px;
-  padding: 25px;
+/*Footer*/
+footer {
+  background-color: rgb(35, 35, 35);
+  color: rgb(255, 255, 255);
+}
+footer .suscribirse {
+  background-color: rgb(99, 99, 99);
+  color: rgb(10, 10, 10);
+}
+
+/* Main Aeronaves */
+main .background {
+  background-color: rgb(10, 10, 10);
+}
+main .carousel-caption .sombra {
+  text-shadow: 4px 2px 2px rgb(10, 10, 10);
+  font-weight: bolder;
+  color: rgb(255, 255, 255);
+  background-color: rgba(0, 0, 0, 0.5);
+}
+main .list-group-item {
+  background-color: transparent;
+  color: rgb(255, 255, 255);
+}
+
+/** Clases Utilitarias**/
+/*configuracion de imagenes utilizadas como fondo*/
+.fondo {
+  background-image: url(../assets/img/fondo2.jpg);
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+}
+
+/* Titulos h1*/
+.grisTitulo {
+  background-color: rgb(99, 99, 99);
+  color: rgb(255, 255, 255);
+  text-align: center;
+}
+
+.text-justify {
+  text-align: justify;
+}
+
+.textoClaro {
+  background-color: rgb(99, 99, 99);
+  color: rgb(255, 255, 255);
+}
+.textoClaro .size {
+  width: 100%;
+  object-fit: cover;
+}
+.textoClaro hr {
+  background-color: rgb(255, 255, 255);
+  color: rgb(255, 255, 255);
+}
+
+.btn {
+  border-radius: 0;
+  background-color: rgb(35, 35, 35);
+}
+.btn:hover {
+  background-color: rgb(10, 10, 10);
 }
 
 /*# sourceMappingURL=estilos.css.map */

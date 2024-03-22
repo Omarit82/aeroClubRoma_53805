@@ -1,0 +1,18 @@
+/* Main Aeronaves */
+main{
+    .background{
+        background-color: $color-oscuro;
+    }
+    .carousel-caption{
+        .sombra{
+            text-shadow: 4px 2px 2px $color-oscuro;
+            font-weight: bolder;
+            color: $color-texto-claro;
+            background-color: $transparencia;
+        }
+    }
+    .list-group-item{
+        background-color: transparent;
+        color:$color-texto-claro;
+    }
+}
