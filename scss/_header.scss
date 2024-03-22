@@ -17,7 +17,7 @@
         background-image: url(../assets/img/burger.png);
     }
     .colorBurger{
-        color: rgb(255,255,255);
-        border-color:1px 1px solid rgb(255,255,255);
+        color: $color-texto-claro;
+        border-color:1px 1px solid $color-texto-claro;
     }
 }

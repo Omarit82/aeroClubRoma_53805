@@ -49,7 +49,7 @@ main .presentacion .sombra {
   color: rgb(255, 255, 255);
 }
 main .presentacion .titulo {
-  font-size: 37px;
+  font-size: 23px;
 }
 main .link {
   text-decoration: none;
@@ -72,7 +72,7 @@ main hr {
     font-size: 46px;
   }
   main .tamanio {
-    font-size: 23px;
+    font-size: 26px;
   }
 }
 

@@ -13,7 +13,7 @@ main{
             
         }
         .titulo{
-            font-size: 37px;
+            font-size: $texto-titulo-mobile;
         }
     }
      
@@ -22,7 +22,7 @@ main{
     }
     
     .tamanio{
-        font-size:18px;
+        font-size:$texto-presentacion-mobile;
     }
     
     hr{
@@ -38,11 +38,11 @@ main{
             background-attachment: fixed;
             height:100vh;
             .titulo{
-                font-size: 46px;
+                font-size: $texto-titulo;
             }
         }
         .tamanio{
-            font-size: 23px;
+            font-size: $texto-presentacion;
         }
     }
     
