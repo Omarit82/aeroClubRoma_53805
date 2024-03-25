@@ -8,6 +8,47 @@ body {
   font-family: "Raleway", sans-serif;
 }
 
+/** Clases Utilitarias**/
+/*configuracion de imagenes utilizadas como fondo*/
+.fondo {
+  background-image: url(../assets/img/fondo2.jpg);
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+}
+
+/* Titulos h1*/
+.grisTitulo {
+  background-color: rgb(99, 99, 99);
+  color: rgb(255, 255, 255);
+  text-align: center;
+}
+
+.text-justify {
+  text-align: justify;
+}
+
+.textoClaro {
+  background-color: rgb(99, 99, 99);
+  color: rgb(255, 255, 255);
+}
+.textoClaro .size {
+  width: 100%;
+  object-fit: cover;
+}
+.textoClaro hr {
+  background-color: rgb(255, 255, 255);
+  color: rgb(255, 255, 255);
+}
+
+.btn {
+  border-radius: 0;
+  background-color: rgb(35, 35, 35);
+}
+.btn:hover {
+  background-color: rgb(10, 10, 10);
+}
+
 /* header */
 .colorHeader {
   background-color: rgb(35, 35, 35);
@@ -76,16 +117,6 @@ main hr {
   }
 }
 
-/*Footer*/
-footer {
-  background-color: rgb(35, 35, 35);
-  color: rgb(255, 255, 255);
-}
-footer .suscribirse {
-  background-color: rgb(99, 99, 99);
-  color: rgb(10, 10, 10);
-}
-
 /* Main Aeronaves */
 main .background {
   background-color: rgb(10, 10, 10);
@@ -100,46 +131,29 @@ main .list-group-item {
   background-color: transparent;
   color: rgb(255, 255, 255);
 }
-
-/** Clases Utilitarias**/
-/*configuracion de imagenes utilizadas como fondo*/
-.fondo {
-  background-image: url(../assets/img/fondo2.jpg);
-  background-size: cover;
-  background-position: center;
+main .card {
+  width: 18rem;
+}
+main .zoom {
+  overflow: hidden;
+}
+main .zoom img {
   width: 100%;
+  transition: transform 1s ease-in;
+}
+main .zoom img:hover {
+  transform: scale(1.2);
+  filter: initial;
 }
 
-/* Titulos h1*/
-.grisTitulo {
-  background-color: rgb(99, 99, 99);
-  color: rgb(255, 255, 255);
-  text-align: center;
-}
-
-.text-justify {
-  text-align: justify;
-}
-
-.textoClaro {
-  background-color: rgb(99, 99, 99);
-  color: rgb(255, 255, 255);
-}
-.textoClaro .size {
-  width: 100%;
-  object-fit: cover;
-}
-.textoClaro hr {
-  background-color: rgb(255, 255, 255);
-  color: rgb(255, 255, 255);
-}
-
-.btn {
-  border-radius: 0;
+/*Footer*/
+footer {
   background-color: rgb(35, 35, 35);
+  color: rgb(255, 255, 255);
 }
-.btn:hover {
-  background-color: rgb(10, 10, 10);
+footer .suscribirse {
+  background-color: rgb(99, 99, 99);
+  color: rgb(10, 10, 10);
 }
 
 /*# sourceMappingURL=estilos.css.map */

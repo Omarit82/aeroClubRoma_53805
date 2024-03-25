@@ -15,4 +15,19 @@ main{
         background-color: transparent;
         color:$color-texto-claro;
     }
+    .card{
+        width: 18rem;
+    }
+    .zoom{
+        overflow: hidden;
+        img{
+        width: 100%;
+        transition: transform 1s ease-in;
+            &:hover{
+                transform: scale(1.2);
+                filter:initial;
+            }
+        }
+    }
+
 }
