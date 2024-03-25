@@ -4,11 +4,10 @@ main{
         background-image: url(../assets/img/fondo.jpg);
         background-color: $transparencia;
         background-blend-mode: overlay;
-        background-position-x: center;
+        background-position-x: $posicion-center;
         height: 30rem;
         .sombra{
-            text-shadow: 2px 2px 2px black;
-            font-weight: bolder;
+            text-shadow: 2px 2px 2px $color-oscuro;
             color: $color-texto-claro;
             
         }
@@ -34,9 +33,9 @@ main{
     @media screen and (min-width: 650px){
         .presentacion{
             background-size: cover;
-            background-position: center;
+            background-position: $posicion-center;
             background-attachment: fixed;
-            height:100vh;
+            height:$t-100vh;
             .titulo{
                 font-size: $texto-titulo;
             }

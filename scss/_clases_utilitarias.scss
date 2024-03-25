@@ -3,14 +3,14 @@
 .fondo{
     background-image: url(../assets/img/fondo2.jpg);
     background-size: cover;
-    background-position: center;
+    background-position: $posicion-center;
     width: $t-100por;
 }
 /* Titulos h1*/
 .grisTitulo{
     background-color: $color-background;
     color:$color-texto-claro;
-    text-align: center;
+    text-align: $posicion-center;
 }
 
 .text-justify{

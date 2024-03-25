@@ -6,7 +6,6 @@ main{
     .carousel-caption{
         .sombra{
             text-shadow: 4px 2px 2px $color-oscuro;
-            font-weight: bolder;
             color: $color-texto-claro;
             background-color: $transparencia;
         }
@@ -15,8 +14,8 @@ main{
         background-color: transparent;
         color:$color-texto-claro;
     }
-    .card{
-        width: 18rem;
+    .tarjeta{
+        width: $tamano-card;
     }
     .zoom{
         overflow: hidden;

@@ -73,6 +73,39 @@ body {
   border-color: 1px 1px solid rgb(255, 255, 255);
 }
 
+/* Hover  */
+.hover-link {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+  overflow: hidden;
+}
+
+.hover-link:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: 51%;
+  right: 51%;
+  bottom: 0;
+  background: rgb(99, 99, 99);
+  height: 4px;
+  -webkit-transition-property: left, right;
+  transition-property: left, right;
+  -webkit-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+
+.hover-link:hover:before, .hover-link:focus:before, .hover-link:active:before {
+  left: 0;
+  right: 0;
+}
+
 /* index */
 main {
   /* Media queries index*/
@@ -85,8 +118,7 @@ main .presentacion {
   height: 30rem;
 }
 main .presentacion .sombra {
-  text-shadow: 2px 2px 2px black;
-  font-weight: bolder;
+  text-shadow: 2px 2px 2px rgb(10, 10, 10);
   color: rgb(255, 255, 255);
 }
 main .presentacion .titulo {
@@ -123,7 +155,6 @@ main .background {
 }
 main .carousel-caption .sombra {
   text-shadow: 4px 2px 2px rgb(10, 10, 10);
-  font-weight: bolder;
   color: rgb(255, 255, 255);
   background-color: rgba(0, 0, 0, 0.5);
 }
@@ -131,7 +162,7 @@ main .list-group-item {
   background-color: transparent;
   color: rgb(255, 255, 255);
 }
-main .card {
+main .tarjeta {
   width: 18rem;
 }
 main .zoom {
