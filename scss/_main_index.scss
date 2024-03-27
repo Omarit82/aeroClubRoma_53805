@@ -1,4 +1,4 @@
-/* index */
+/* Main index */
 main{
     .presentacion{
         background-image: url(../assets/img/fondo.jpg);
@@ -9,40 +9,34 @@ main{
         .sombra{
             text-shadow: 2px 2px 2px $color-oscuro;
             color: $color-texto-claro;
-            
         }
         .titulo{
             font-size: $texto-titulo-mobile;
         }
     }
-     
     .link{
         text-decoration: none;
     }
-    
     .tamanio{
         font-size:$texto-presentacion-mobile;
     }
-    
     hr{
         color:$color-oscuro;
         background-color: $color-oscuro;
     }
-    
-    /* Media queries index*/
-    @media screen and (min-width: 650px){
-        .presentacion{
-            background-size: cover;
-            background-position: $posicion-center;
-            background-attachment: fixed;
-            height:$t-100vh;
-            .titulo{
-                font-size: $texto-titulo;
-            }
-        }
-        .tamanio{
-            font-size: $texto-presentacion;
+}
+ /* Media queries index*/
+ @media screen and (min-width: 650px){
+    .presentacion{
+        background-size: cover;
+        background-position: $posicion-center;
+        background-attachment: fixed;
+        height:$t-100vh;
+        .titulo{
+            font-size: $texto-titulo;
         }
     }
-    
+    .tamanio{
+        font-size: $texto-presentacion;
+    }
 }

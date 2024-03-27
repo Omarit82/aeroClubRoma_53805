@@ -1,15 +1,6 @@
 /* header */
 .colorHeader{
     background-color:$color-background-secundario; 
-    .colorListItem{
-        text-decoration: none;
-        &:hover{
-            box-shadow: 0px -35px 35px -28px rgba(85,85,85,0.45) inset;
-        }
-        &:active{
-            box-shadow: $color-box-shadow 0px 20px 15px -10px;
-        }
-    }
     .linkColor{
         color:$color-texto-claro;
     }
@@ -23,15 +14,9 @@
 }
 /* Hover  */
 .hover-link {
-    display: inline-block;
-    vertical-align: middle;
-    -webkit-transform: perspective(1px) translateZ(0);
-    transform: perspective(1px) translateZ(0);
-    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-    position: relative;
-    overflow: hidden;
-  }
-  .hover-link:before {
+    @include hover($display, $vertical-align,$transform,$box-shadow,$position,$overflow);
+}
+.hover-link:before {
     content: "";
     position: absolute;
     z-index: -1;
@@ -40,15 +25,12 @@
     bottom: 0;
     background: $color-background;
     height: 4px;
-    -webkit-transition-property: left, right;
     transition-property: left, right;
-    -webkit-transition-duration: 0.2s;
     transition-duration: 0.2s;
-    -webkit-transition-timing-function: ease-out;
     transition-timing-function: ease-out;
-  }
-  .hover-link:hover:before, .hover-link:focus:before, .hover-link:active:before {
+}
+.hover-link:hover:before, .hover-link:focus:before, .hover-link:active:before {
     left: 0;
     right: 0;
-  }
+}
   
