@@ -2,28 +2,28 @@
 main{
     .presentacion{
         background-image: url(../assets/img/fondo.jpg);
-        background-color: $transparencia;
+        background-color: map-get($colores,transparencia);;
         background-blend-mode: overlay;
         background-position-x: $posicion-center;
         height: 30rem;
         .sombra{
             text-shadow: 2px 2px 2px $color-oscuro;
-            color: $color-texto-claro;
+            color: map-get($colores,texto-claro);
         }
         .titulo{
-            font-size: $texto-titulo-mobile;
+            font-size: map-get($textos,titulo-mobile);
         }
     }
     .link{
         text-decoration: none;
-        color: $color-link;
+        color: map-get($colores,link);;
     }
     .tamanio{
-        font-size:$texto-presentacion-mobile;
+        font-size:map-get($textos,presentacion-mobile);
     }
     hr{
-        color:$color-oscuro;
-        background-color: $color-oscuro;
+        color:map-get($colores,oscuro);
+        background-color:map-get($colores,oscuro);
     }
      /* Media queries index*/
 
@@ -34,11 +34,11 @@ main{
             background-attachment: fixed;
             height:$t-100vh;
             .titulo{
-                font-size: $texto-titulo;
+                font-size: map-get($textos,titulo);
             }
         }
         .tamanio{
-            font-size: $texto-presentacion;
+            font-size: map-get($textos,presentacion);
         }
     }
 }

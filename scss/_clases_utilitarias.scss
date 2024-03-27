@@ -8,8 +8,8 @@
 }
 /* Titulos h1*/
 .grisTitulo{
-    background-color: $color-background;
-    color:$color-texto-claro;
+    background-color: map-get($colores,background);
+    color:map-get($colores,texto-claro);
     text-align: $posicion-center;
 }
 
@@ -18,22 +18,22 @@
 }
 
 .textoClaro{
-    background-color: $color-background;
+    background-color: map-get($colores,background);
     color:$color-texto-claro;
     .size{
         width: $t-100por;
         object-fit: cover;
     }
     hr{
-        background-color: $color-texto-claro;
-        color: $color-texto-claro;
+        background-color: map-get($colores,texto-claro);
+        color: map-get($colores,texto-claro);
     }
 }
 
 .btn{
     border-radius: 0;
-    background-color: $color-background-secundario;
+    background-color:map-get($colores,background-secundario);;
     &:hover{
-        background-color: $color-oscuro;
+        background-color:map-get($colores,oscuro);;
     }
 }

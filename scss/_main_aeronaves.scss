@@ -1,18 +1,18 @@
 /* Main Aeronaves */
 main{
     .background{
-        background-color: $color-oscuro;
+        background-color: map-get($colores,oscuro);
     }
     .carousel-caption{
         .sombra{
-            text-shadow: 4px 2px 2px $color-oscuro;
-            color: $color-texto-claro;
-            background-color: $transparencia;
+            text-shadow: 4px 2px 2px map-get($colores,oscuro);
+            color: map-get($colores,texto-claro);
+            background-color: map-get($colores,transparencia);
         }
     }
     .list-group-item{
         background-color: transparent;
-        color:$color-texto-claro;
+        color:map-get($colores,texto-claro);
     }
     .tarjeta{
         width: $tamano-card;

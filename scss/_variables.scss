@@ -10,11 +10,23 @@ $color-link: rgb(10, 10, 120);
 $t-100por : 100%;
 $t-100vh: 100vh;
 
-$texto-titulo: 3.2rem;
-$texto-presentacion: 2.2rem;
+/*Mapas*/
+$textos:(
+    titulo: 3.1rem,
+    presentacion: 2rem,
+    titulo-mobile: 2.5rem,
+    presentacion-mobile: 1.2rem
+);
 
-$texto-titulo-mobile: 2.5rem;
-$texto-presentacion-mobile: 1.2rem;
+$colores:(
+    background: $color-background,
+    texto-claro : $color-texto-claro,
+    oscuro: $color-oscuro,
+    background-secundario: $color-background-secundario,
+    transparencia: $transparencia,
+    box-shadow: $color-box-shadow,
+    link: $color-link
+);
 
 $tamano-card: 18rem;
 $posicion-center: center;

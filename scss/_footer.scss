@@ -1,9 +1,9 @@
 /*Footer*/
 footer{
-    background-color: $color-background-secundario;
-    color:$color-texto-claro;
+    background-color:map-get($colores,background-secundario);
+    color:map-get($colores,texto-claro);
     .suscribirse{
-        background-color:$color-background;
-        color:$color-oscuro;
+        background-color:map-get($colores,background);
+        color:map-get($colores,oscuro);
     }
 }
