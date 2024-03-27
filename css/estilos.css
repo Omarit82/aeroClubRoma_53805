@@ -94,6 +94,9 @@ body {
 }
 
 /* Main index */
+main {
+  /* Media queries index*/
+}
 main .presentacion {
   background-image: url(../assets/img/fondo.jpg);
   background-color: rgba(0, 0, 0, 0.5);
@@ -106,34 +109,34 @@ main .presentacion .sombra {
   color: rgb(255, 255, 255);
 }
 main .presentacion .titulo {
-  font-size: 46px;
+  font-size: 2.5rem;
 }
 main .link {
   text-decoration: none;
+  color: rgb(10, 10, 120);
 }
 main .tamanio {
-  font-size: 18px;
+  font-size: 1.2rem;
 }
 main hr {
   color: rgb(10, 10, 10);
   background-color: rgb(10, 10, 10);
 }
-
-/* Media queries index*/
 @media screen and (min-width: 650px) {
-  .presentacion {
+  main .presentacion {
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
     height: 100vh;
   }
-  .presentacion .titulo {
-    font-size: 46px;
+  main .presentacion .titulo {
+    font-size: 3.2rem;
   }
-  .tamanio {
-    font-size: 26px;
+  main .tamanio {
+    font-size: 2.5rem;
   }
 }
+
 /* Main Aeronaves */
 main .background {
   background-color: rgb(10, 10, 10);
