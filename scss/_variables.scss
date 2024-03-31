@@ -10,6 +10,16 @@ $color-link: rgb(10, 10, 120);
 $t-100por : 100%;
 $t-100vh: 100vh;
 
+$tamano-card: 18rem;
+$posicion-center: center;
+
+$display:inline-block;
+$vertical-align:middle;
+$transform: perspective(1px) translateZ(0);
+$box-shadow:0 0 1px rgba(0, 0, 0, 0);
+$position: relative;
+$overflow:hidden;
+
 /*Mapas*/
 $textos:(
     titulo: 3.1rem,
@@ -28,12 +38,4 @@ $colores:(
     link: $color-link
 );
 
-$tamano-card: 18rem;
-$posicion-center: center;
 
-$display:inline-block;
-$vertical-align:middle;
-$transform: perspective(1px) translateZ(0);
-$box-shadow:0 0 1px rgba(0, 0, 0, 0);
-$position: relative;
-$overflow:hidden;
