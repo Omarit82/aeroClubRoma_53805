@@ -167,6 +167,12 @@ main .zoom img:hover {
   filter: initial;
 }
 
+main .sombra {
+  text-shadow: 2px 2px 2px rgb(10, 10, 10);
+}
+main .titulo {
+  font-size: 2.5rem;
+}
 /*Footer*/
 footer {
   background-color: rgb(35, 35, 35);

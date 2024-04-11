@@ -1,0 +1,12 @@
+main{
+    .sombra{
+        text-shadow: 2px 2px 2px $color-oscuro;
+        color: map-get($colores,texto-oscuro);
+    }
+    .titulo{
+        font-size: map-get($textos,titulo-mobile);
+    }
+    .error{
+        
+    }
+}
