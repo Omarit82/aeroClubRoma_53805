@@ -167,10 +167,14 @@ main .zoom img:hover {
   filter: initial;
 }
 
-main .sombra {
-  text-shadow: 2px 2px 2px rgb(10, 10, 10);
+main .error {
+  background-color: rgb(99, 99, 99);
 }
-main .titulo {
+main .error .sombra {
+  text-shadow: 2px 2px 2px rgb(10, 10, 10);
+  color: rgb(255, 255, 255);
+}
+main .error .titulo {
   font-size: 2.5rem;
 }
 
