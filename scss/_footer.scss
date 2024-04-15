@@ -1,0 +1,16 @@
+/*Footer*/
+footer{
+    background-color:map-get($colores,background-secundario);
+    color:map-get($colores,texto-claro);
+    .suscribirse{
+        background-color:map-get($colores,background);
+        color:map-get($colores,oscuro);
+    }
+    i{
+        color:map-get($colores,texto-claro);   
+    }
+    .fa-whatsapp{
+        color:map-get($colores,whatsapp);
+    }
+}
+    

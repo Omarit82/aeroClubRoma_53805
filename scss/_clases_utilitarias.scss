@@ -1,0 +1,39 @@
+/** Clases Utilitarias**/
+/*configuracion de imagenes utilizadas como fondo*/
+.fondo{
+    background-image: url(../assets/img/fondo2.png);
+    background-size: cover;
+    background-position: $posicion-center;
+    width: $t-100por;
+}
+/* Titulos h1*/
+.grisTitulo{
+    background-color: map-get($colores,background);
+    color:map-get($colores,texto-claro);
+    text-align: $posicion-center;
+}
+
+.text-justify{
+    text-align: justify;
+}
+
+.textoClaro{
+    background-color: map-get($colores,background);
+    color:$color-texto-claro;
+    .size{
+        width: $t-100por;
+        object-fit: cover;
+    }
+    hr{
+        background-color: map-get($colores,texto-claro);
+        color: map-get($colores,texto-claro);
+    }
+}
+
+.btn{
+    border-radius: 0;
+    background-color:map-get($colores,background-secundario);;
+    &:hover{
+        background-color:map-get($colores,oscuro);;
+    }
+}

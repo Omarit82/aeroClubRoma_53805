@@ -1,0 +1,8 @@
+@mixin hover($display, $vertical-align,$transform,$box-shadow,$position,$overflow){
+    display: $display;
+    vertical-align: $vertical-align;
+    transform: $transform;
+    box-shadow: $box-shadow;
+    position: $position;
+    overflow: $overflow;
+}

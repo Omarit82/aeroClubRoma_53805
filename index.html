@@ -1,41 +1,50 @@
 <!DOCTYPE html>
 <html lang="es">
     <head>
+        <!--Etiquetas meta-->
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Aeroclub Roma</title>
+        <meta name="description" content="¡Descubre el emocionante mundo de la aviación en Roma con nuestro aeroclub y escuela de vuelo! Ofrecemos cursos de vuelo para principiantes y pilotos avanzados, junto con emocionantes excursiones aéreas sobre los majestuosos paisajes de Italia. ¡Únete a nosotros y haz realidad tu sueño de volar!">
+        <meta name="keywords" content="Aviación en Roma, Vuelos sobre Roma, Clases de vuelo en Roma, Instrucción de vuelo en Roma, Aprender a volar en Roma, Licencia de piloto en Roma, Experiencias de vuelo en Roma, Vuelos turisticos en Roma">
+        <!--Title-->
+        <title>Aeroclub | Escuela de vuelo Roma</title>
         <!-- Favicon-->
         <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+        <!-- Links-->
         <link rel="stylesheet" href="./css/bootstrap.min.css">
         <link rel="stylesheet" href="./css/estilos.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap" rel="stylesheet">
+        <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <!-- Iconos de fontawesome-->
+        <script src="https://kit.fontawesome.com/6f61c41d3e.js" crossorigin="anonymous"></script>
     </head>
     <body>
         <header class="colorHeader">
             <nav class="navbar navbar-expand-lg">
-                <div class="row m-0 justify-content-around">
-                    <a href="#"class="col-7 col-md-3"><img class="navbar-brand w-100 ps-3 me-5" src="./assets/img/logoAvion.png" alt="Logo del Aeroclub Roma"></a>
+                <div class="row m-0 justify-content-around w-100">
+                    <a href="#"class="col-7 col-md-3"><img class="navbar-brand w-100 ps-3 me-5 animate__animated animate__lightSpeedInRight" src="./assets/img/logoAvion.png" alt="Logo del Aeroclub Roma"></a>
                     <button class="navbar-toggler colorBurger col-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon burger"></span>
                     </button>
                     <div class="collapse navbar-collapse col-3 fs-4" id="navbarSupportedContent">
                         <ul class="navbar-nav me-auto mb-2 mb-lg-0 w-100 justify-content-around">
-                            <li class="nav-item colorListItem">
-                                <a class="nav-link linkColor fw-bolder" href="#">Inicio</a>
+                            <li class="nav-item hover-link">
+                                <a class=" nav-link linkColor fw-bolder" href="#">Inicio</a>
                             </li>
-                            <li class="nav-item colorListItem">
+                            <li class="nav-item hover-link">
                                 <a class="nav-link linkColor fw-bolder" href="./pages/aeronaves.html">Aeronaves</a>
                             </li>
-                            <li class="nav-item colorListItem">
+                            <li class="nav-item hover-link">
                                 <a class="nav-link linkColor fw-bolder" href="./pages/nosotros.html">Nosotros</a>
                             </li>
-                            <li class="nav-item colorListItem">
-                                <a class="nav-link linkColor fw-bolder" href="./pages/ubicacion.html">Ubicacion</a>
+                            <li class="nav-item hover-link">
+                                <a class="nav-link linkColor fw-bolder" href="./pages/ubicacion.html">Ubicación</a>
                             </li>
-                            <li class="nav-item colorListItem">
-                                <a class="nav-link linkColor fw-bolder" href="./pages/unete.html">Unete!</a>
+                            <li class="nav-item hover-link">
+                                <a class="nav-link linkColor fw-bolder" href="./pages/unete.html">¡Únete!</a>
                             </li>
                         </ul>
                     </div>
@@ -43,50 +52,69 @@
             </nav>
         </header>
         <main>
+            <!-- Presentacion imagen con paralax-->
             <section class="container-fluid presentacion">
                 <div class="row">
                     <div class="col-12 align-self-start">
-                        <h1 class="sombra titulo pt-2 pt-md-5 pb-md-5 ps-3 text-center text-md-start">Despega hacia tu futuro como piloto</h1>
+                        <h1 class="sombra fw-bolder titulo pt-2 pt-md-5 pb-md-5 ps-3 text-center text-md-start">Despega hacia tu futuro como piloto</h1>
                     </div>
-                    <div class="col-12 align-self-center">
-                        <p class="sombra pt-2 ps-3 fs-2">“Una vez hayas probado el vuelo, siempre caminarás por la Tierra con la vista mirando al cielo...</p>
-                        <p class="sombra ps-3 fs-2">...porque ya has estado allí y allí siempre desearás volver”</p>
+                    <div class="col-12 align-self-center tamanio">
+                        <p class="sombra fw-bolder pt-2 ps-3">“Una vez hayas probado el vuelo, siempre caminarás por la Tierra con la vista mirando al cielo...</p>
+                        <p class="sombra fw-bolder ps-3">...porque ya has estado allí y allí siempre desearás volver”</p>
                     </div>
-                    <div class="col-12 text-end align-self-end">
-                        <p class="sombra pt-3 pe-3 p-md-5 me-md-5 fs-2">Leonardo Da Vinci</p>
+                    <div class="col-12 text-end align-self-end tamanio">
+                        <p class="sombra fw-bolder pt-3 pe-3 p-md-5 me-md-5">Leonardo Da Vinci</p>
                     </div>
                 </div>
             </section>
+            <!-- Texto informativo sobre el aeroclub-->
             <section class=" container m-auto row justify-content-center">
-                <p class="col-10 col-md-8 p-3 text-justify tamanio">En Aeroclub Roma, estamos comprometidos a ayudarte a alcanzar tus sueños de volar. Nuestro equipo altamente capacitado y nuestras modernas instalaciones te brindarán la educación y el entrenamiento de vuelo que necesitas.</p>
+                <h2 class="fw-bold text-center mt-5 mb-5">Nuestra misión</h2>
+                <p class="col-10 col-md-8 p-3 text-justify fs-4">En Aeroclub Roma, estamos comprometidos a ayudarte a <span class="fw-bolder">alcanzar tus sueños de volar.</span> Nuestro equipo altamente capacitado y nuestras modernas instalaciones te brindarán la educación y el entrenamiento de vuelo que necesitas.</p>
                 <hr class="border-3 w-75">
-                <p class="col-10 col-md-8 p-3 text-justify tamanio">Estamos emocionados de ayudarte a alcanzar tu meta como piloto. Ya sea que estés interesado en convertirte en privado o desees seguir una carrera en la aviación comercial, nuestro equipo altamente capacitado y experimentado está aquí para guiarte en cada paso del camino.</p>
+                <p class="col-10 col-md-8 p-3 text-justify fs-4">Estamos emocionados de ayudarte a alcanzar tu meta como piloto. Ya sea que estés interesado en <span class="fw-bolder">convertirte en piloto privado</span> o desees seguir una <span class="fw-bolder">carrera en la aviación comercial</span>, nuestro equipo altamente capacitado y experimentado está aquí para guiarte en cada paso del camino.</p>
                 <hr class="border-3 w-75">
-                <p class="col-10 col-md-8 p-3 text-justify tamanio">No pierdas la oportunidad de convertirte en piloto y explorar nuevas alturas. Completa el <a class="link" href="./pages/unete.html">formulario</a>, reserva tu lugar en nuestro próximo curso y comienza a aprender con nosotros</p>
+                <p class="col-10 col-md-8 p-3 text-justify fs-4"><span class="fw-bolder">¡No pierdas la oportunidad de convertirte en piloto y explorar nuevas alturas!</span> Completa el <a class="link fw-bold" href="./pages/unete.html">formulario</a>, reserva tu lugar en nuestro próximo curso y <span class="fw-bolder">¡comienza a aprender con nosotros!</span></p>
             </section>
-            <section class="textoClaro container-fluid fw-bold text-center p-5 col ">
-                <h2 class="fw-bolder pb-4">Nuestros Cursos</h2>
+            <!-- Seccion de los cursos los links de los cursos llevan a la pagina 404-->
+            <section class="textoClaro container-fluid fw-bold text-center p-5 col">
+                <h2 class="fw-bolder pb-4 fs-1">Nuestros Cursos</h2>
+                <hr class="border-3 w-75 m-auto">
                 <div>
                     <h3 class="m-5 fw-bold">Curso de Piloto Privado de Avion</h3>
-                    <p class="p-md-3 col-9 col-md-6 text-justify m-auto">La licencia de piloto privado de avión con VFR controlado te permitirá volar monomotores de hasta 5.700 Kg de peso máximo de despegue.</p>
+                    <div data-aos="flip-right" data-aos-duration="2500"class="mb-5">
+                        <img src="./assets/img/pilot.webp" alt="Piloto analizando la carta aeronautica en vuelo" class="col-10 col-md-5" loading="lazy">
+                    </div>
+                    <p class="p-md-3 col-11 col-md-6 text-justify m-auto">La licencia de piloto privado de avión con VFR controlado te permitirá volar monomotores de hasta 5.700 Kg de peso máximo de despegue.</p>
                     <a href="./pages/404.html"class="btn btn-dark col-6 col-md-2 m-4">Ir al Curso</a>
                 </div>
+                <hr class="border-3 w-75 m-auto">
                 <div>
                     <h3 class="m-5 fw-bold">Curso de Piloto Comercial de Avion</h3>
-                    <p class="p-md-3 col-9 col-md-6 text-justify m-auto">La licencia de piloto comercial de avión con HVI te permitirá volar aeronaves comerciales de hasta 5.700 Kg de maximo.</p>
+                    <div data-aos="flip-right" data-aos-duration="2500" class="mb-5">
+                        <img src="./assets/img/comercial.webp" alt="Piloto saludando desde el puesto de comandante" class="col-10 col-md-5" loading="lazy">
+                    </div>
+                    <p class="p-md-3 col-11 col-md-6 text-justify m-auto">La licencia de piloto comercial de avión con HVI te permitirá volar aeronaves comerciales de hasta 5.700 Kg de máximo.</p>
                     <a href="./pages/404.html"class="btn btn-dark col-6 col-md-2 m-4">Ir al Curso</a>
                 </div>
+                <hr class="border-3 w-75 m-auto">
                 <div>
                     <h3 class="m-5 fw-bold">Curso de Instructor de Vuelo</h3>
-                    <p class="p-md-3 col-9 col-md-6 text-justify m-auto">Esta licencia te permitirá a instruir alumnos y pilotos hasta el nivel de tu licencia y habilitaciones.</p>
+                    <div data-aos="flip-right" data-aos-duration="2500" class="mb-5">
+                        <img src="./assets/img/instructor2.webp" alt="Instructor realizando un briefing con su alumna" class="col-10 col-md-5" loading="lazy">
+                    </div>
+                    <p class="p-md-3 col-11 col-md-6 text-justify m-auto">Esta licencia te permitirá a instruir alumnos y pilotos hasta el nivel de tu licencia y habilitaciones.</p>
                     <a href="./pages/404.html"class="btn btn-dark col-6 col-md-2 m-4">Ir al Curso</a>
                 </div>
+                <hr class="border-3 w-75 m-auto">
                 <div>   
                     <h3 class="m-5 fw-bold">Curso de Piloto Comercial de Primera Clase</h3>
-                    <p class="p-md-3 col-9 col-md-6 text-justify m-auto mb-3">La Licencia te habilita como piloto de vuelos comerciales en aeronaves de hasta 20.000 kgs. maximo peso de despegue, y como copiloto en aviones cuyo peso máximo al despegue sea superior a los 5.700 kgs.</p>
+                    <div data-aos="flip-right" data-aos-duration="2500" class="mb-5">
+                        <img src="./assets/img/pilot2.webp" alt="Copiloto de un vuelo accionado un boton en el overhead panel" class="col-10 col-md-5" loading="lazy">
+                    </div>
+                    <p class="p-md-3 col-11 col-md-6 text-justify m-auto mb-3">Esta licencia te habilita como piloto de vuelos comerciales en aeronaves de hasta 20.000 kgs. de peso máximo de despegue, y como copiloto en aviones cuyo peso máximo al despegue sea superior a los 5.700 kgs.</p>
                     <a href="./pages/404.html"class="btn btn-dark col-6 col-md-2 m-4">Ir al Curso</a>
                 </div>
-                
             </section>
         </main>
         <footer>
@@ -99,20 +127,19 @@
                         <p>Email:info@aeroclubroma.it</p>
                     </section>
                     <section class="order-1 order-md-2 col-md-3 p-4">
-                        <h3 class="ms-3 text-center">Encuentranos en nuestras redes sociales</h3>
-                            <section  class="d-flex justify-content-around">
-                                <a href="./pages/404.html"><img src="./assets/img/facebook.png" alt="Logo Facebook" class="p-1"></a>
-                                <a href="./pages/404.html"><img src="./assets/img/instagram.png" alt="Logo Instagram" class="p-1"></a>
-                                <a href="./pages/404.html"><img src="./assets/img/linkedin.png" alt="Logo LinkedIn" class="p-1"></a>
-                                <a href="./pages/404.html"><img src="./assets/img/twitter.png" alt="Logo Twitter" class="p-1"></a>
-                            </section>
-                        <a href="./pages/404.html"><img src="./assets/img/whatsapp.png" alt="Logo WhatsApp" class="position-fixed bottom-0 end-0 mb-3 me-3"></a>
-                    </section>
-                    
+                        <h3 class="ms-3 text-center fs-4">Encuéntranos en nuestras redes sociales</h3>
+                        <section  class="d-flex justify-content-around">
+                            <a href="https://www.facebook.com" target="_blank"><i class="fa-brands fa-facebook fa-3x"></i></a>
+                            <a href="https://www.instagram.com" target="_blank"><i class="fa-brands fa-instagram fa-3x"></i></a>
+                            <a href="https://www.linkedin.com" target="_blank"><i class="fa-brands fa-linkedin fa-3x"></i></a>
+                            <a href="https://www.twitter.com" target="_blank"><i class="fa-brands fa-twitter fa-3x"></i></a>
+                        </section>
+                        <a href="https://web.whatsapp.com" target="_blank"><i class="fa-brands fa-whatsapp position-fixed bottom-0 end-0 mb-3 me-3 fa-4x"></i></a>
+                    </section>                 
                     <section class="col-md-3 p-4 order-2 order-md-3">
-                        <form action="" class="d-flex flex-column ms-3 me-3">
-                            <label for="newsletter" class="align-self-center mb-2"> Suscribete a nuestro boletin!</label>
-                            <input type="email" name="newsletter" id="newsletter" placeholder="miEmail@email.com">
+                        <form action="./pages/404.html" class="d-flex flex-column ms-3 me-3" method="post">
+                            <label for="newsletter" class="align-self-center mb-2">¡Suscríbete a nuestro boletin!</label>
+                            <input type="email" name="newsletter" id="newsletter" placeholder=" miEmail@email.com">
                             <input class="btn suscribirse fw-bold mt-3 w-50 align-self-center" type="submit" value="Suscribirse">
                         </form>
                     </section>
@@ -123,5 +150,9 @@
             </div>
         </footer>
         <script src="./js/bootstrap.bundle.min.js"></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
     </body>
 </html>

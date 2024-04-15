@@ -1,149 +1,197 @@
-*{
-    margin: 0;
-    padding: 0;
+/* Variables*/
+/*Mapas*/
+@import "animate.css";
+* {
+  margin: 0;
+  padding: 0;
 }
 
-body{
-    font-family: 'Raleway', sans-serif;
+body {
+  font-family: "Raleway", sans-serif;
+}
+
+/** Clases Utilitarias**/
+/*configuracion de imagenes utilizadas como fondo*/
+.fondo {
+  background-image: url(../assets/img/fondo2.png);
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+}
+
+/* Titulos h1*/
+.grisTitulo {
+  background-color: rgb(99, 99, 99);
+  color: rgb(255, 255, 255);
+  text-align: center;
+}
+
+.text-justify {
+  text-align: justify;
+}
+
+.textoClaro {
+  background-color: rgb(99, 99, 99);
+  color: rgb(255, 255, 255);
+}
+.textoClaro .size {
+  width: 100%;
+  object-fit: cover;
+}
+.textoClaro hr {
+  background-color: rgb(255, 255, 255);
+  color: rgb(255, 255, 255);
+}
+
+.btn {
+  border-radius: 0;
+  background-color: rgb(35, 35, 35);
+}
+.btn:hover {
+  background-color: rgb(10, 10, 10);
 }
 
 /* header */
+.colorHeader {
+  background-color: rgb(35, 35, 35);
+}
+.colorHeader .linkColor {
+  color: rgb(255, 255, 255);
+}
+.colorHeader .burger {
+  background-image: url(../assets/img/burger.png);
+}
+.colorHeader .colorBurger {
+  color: rgb(255, 255, 255);
+  border-color: 1px 1px solid rgb(255, 255, 255);
+}
 
-.colorHeader{
-    background-color: #2c2c2c; 
-    .colorListItem{
-        text-decoration: none;
-        &:hover{
-            box-shadow: 0px -35px 35px -28px rgba(85,85,85,0.45) inset;
-        }
-        &:active{
-            box-shadow: rgb(85, 85, 85) 0px 20px 15px -10px;
-        }
-    }
-    .linkColor{
-        color: rgb(255,255,255);
-    }
-    .burger{
-        background-image: url(../assets/img/burger.png);
-    }
-    .colorBurger{
-        color: rgb(255,255,255);
-        border-color:1px 1px solid rgb(255,255,255);
-    }
+/* Hover  */
+.hover-link {
+  display: inline-block;
+  vertical-align: middle;
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+  overflow: hidden;
+}
+
+.hover-link:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: 51%;
+  right: 51%;
+  bottom: 0;
+  background: rgb(99, 99, 99);
+  height: 4px;
+  transition-property: left, right;
+  transition-duration: 0.2s;
+  transition-timing-function: ease-out;
+}
+
+.hover-link:hover:before, .hover-link:focus:before, .hover-link:active:before {
+  left: 0;
+  right: 0;
+}
+
+/* Main index */
+main {
+  /* Media queries index*/
+}
+main .presentacion {
+  background-image: url(../assets/img/fondo.png);
+  background-color: rgba(0, 0, 0, 0.5);
+  background-blend-mode: overlay;
+  background-position-x: center;
+  height: 30rem;
+}
+main .presentacion .sombra {
+  text-shadow: 2px 2px 2px rgb(10, 10, 10);
+  color: rgb(255, 255, 255);
+}
+main .presentacion .titulo {
+  font-size: 2.5rem;
+}
+main .link {
+  text-decoration: none;
+  color: rgb(10, 10, 120);
+}
+main .tamanio {
+  font-size: 1.2rem;
+}
+main hr {
+  color: rgb(10, 10, 10);
+  background-color: rgb(10, 10, 10);
+}
+@media screen and (min-width: 650px) {
+  main .presentacion {
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 100vh;
+  }
+  main .presentacion .titulo {
+    font-size: 3.1rem;
+  }
+  main .tamanio {
+    font-size: 2rem;
+  }
+}
+
+/* Main Aeronaves */
+main .background {
+  background-color: rgb(10, 10, 10);
+}
+main .carousel-caption .sombra {
+  text-shadow: 4px 2px 2px rgb(10, 10, 10);
+  color: rgb(255, 255, 255);
+  background-color: rgba(0, 0, 0, 0.5);
+}
+main .list-group-item {
+  background-color: transparent;
+  color: rgb(255, 255, 255);
+}
+main .tarjeta {
+  width: 18rem;
+}
+main .zoom {
+  overflow: hidden;
+}
+main .zoom img {
+  width: 100%;
+  transition: transform 1s ease-in;
+}
+main .zoom img:hover {
+  transform: scale(1.2);
+  filter: initial;
+}
+
+main .error {
+  background-color: rgb(99, 99, 99);
+}
+main .error .sombra {
+  text-shadow: 2px 2px 2px rgb(10, 10, 10);
+  color: rgb(255, 255, 255);
+}
+main .error .titulo {
+  font-size: 2.5rem;
 }
 
 /*Footer*/
-
-footer{
-    background-color: rgb(35,35,35);
-    color:rgb(255,255,255);
-    .suscribirse{
-        background-color: rgb(99, 99, 99);
-        color: rgb(10,10,10);
-    }
+footer {
+  background-color: rgb(35, 35, 35);
+  color: rgb(255, 255, 255);
+}
+footer .suscribirse {
+  background-color: rgb(99, 99, 99);
+  color: rgb(10, 10, 10);
+}
+footer i {
+  color: rgb(255, 255, 255);
+}
+footer .fa-whatsapp {
+  color: rgb(48, 255, 48);
 }
 
-/* index */
-
-.presentacion{
-    background-image: url(../assets/img/fondo.jpg);
-    background-color: rgba(255, 255, 255, 0.507);
-    background-color: rgba(0, 0, 0, 0.55);
-    background-blend-mode: overlay;
-    background-position-x: center;
-    height: 30rem;
-    .sombra{
-        text-shadow: 2px 2px 2px black;
-        font-weight: bolder;
-        color: rgb(255,255,255);
-        
-    }
-    .titulo{
-        font-size: 37px;
-    }
-}
-  
-.link{
-    text-decoration: none;
-}
-.tamanio{
-    font-size:18px;
-}
-/* Media queries index*/
-@media screen and (min-width: 650px){
-    .presentacion{
-        background-size: cover;
-        background-position: center;
-        background-attachment: fixed;
-        height:100vh;
-        .titulo{
-            font-size: 46px;
-        }
-    }
-    .tamanio{
-        font-size: 23px;
-    }
-}
-
-hr{
-    color:rgb(10,10,10);;
-    background-color: rgb(10,10,10);;
-}
-
-/* Aeronaves */
-
-.background{
-    background-color: rgb(10,10,10);;
-}
-.carousel-caption{
-    .sombra{
-        text-shadow: 4px 2px 2px black;
-        font-weight: bolder;
-        color: rgb(255, 255, 255);
-        background-color: rgba(0, 0, 0, 0.4);
-    }
-}
-/** Clases Utilitarias**/
-
-.fondo{
-    background-image: url(../assets/img/fondo2.jpg);
-    background-size: cover;
-    background-position: center;
-    width: 100%;
-}
-/* Titulos h1*/
-.grisTitulo{
-    background-color: rgb(99, 99, 99);
-    color:rgb(255,255,255);
-    text-align: center;
-}
-.text-justify{
-    text-align: justify;
-}
-
-.textoClaro{
-    background-color: rgb(99, 99, 99);
-    color:rgb(255,255,255);
-    .size{
-        width: 100%;
-        object-fit: cover;
-    }
-    hr{
-        background-color: rgb(255,255,255);
-        color: rgb(255,255,255);
-    }
-}
-.btn{
-    border-radius: 0;
-    background-color: rgb(35,35,35);
-    &:hover{
-        background-color: rgb(10,10,10);
-    }
-}
-.list-group-item{
-    background-color: transparent;
-    color:white;
-}
-
-
-
+/*# sourceMappingURL=estilos.css.map */

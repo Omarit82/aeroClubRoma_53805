@@ -1,0 +1,36 @@
+/* header */
+.colorHeader{
+    background-color:map-get($colores,background-secundario); 
+    .linkColor{
+        color:map-get($colores,texto-claro);
+    }
+    .burger{
+        background-image: url(../assets/img/burger.png);
+    }
+    .colorBurger{
+        color: map-get($colores,texto-claro);
+        border-color:1px 1px solid map-get($colores,texto-claro);
+    }
+}
+/* Hover  */
+.hover-link {
+    @include hover($display, $vertical-align,$transform,$box-shadow,$position,$overflow);
+}
+.hover-link:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: 51%;
+    right: 51%;
+    bottom: 0;
+    background: map-get($colores,background);
+    height: 4px;
+    transition-property: left, right;
+    transition-duration: 0.2s;
+    transition-timing-function: ease-out;
+}
+.hover-link:hover:before, .hover-link:focus:before, .hover-link:active:before {
+    left: 0;
+    right: 0;
+}
+  

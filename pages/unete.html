@@ -3,7 +3,9 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Aeroclub Roma</title>
+        <meta name="description" content="Únete a la emocionante comunidad del Aeroclub de Roma y haz realidad tu pasión por la aviación. Tanto si eres un piloto experimentado como si estás empezando en el mundo de la aviación, en nuestro aeroclub encontrarás un ambiente acogedor y apasionado.¡Únete hoy y comienza tu emocionante viaje en el cielo de Roma!">
+        <meta name="keywords" content="Unirse al aeroclub Roma, Afiliación al aeroclub Roma, Acceso a la flota de aeronaves, Conexión con pilotos en Roma, Comunidad de aviadores de Roma, Únete a la comunidad aeronáutica">
+        <title>Unete al Aeroclub Roma</title>
         <!-- Favicon-->
         <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
         <link rel="stylesheet" href="../css/bootstrap.min.css">
@@ -11,45 +13,47 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap" rel="stylesheet">
+        <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+        <!-- Iconos de fontawesome-->
+        <script src="https://kit.fontawesome.com/6f61c41d3e.js" crossorigin="anonymous"></script>
     </head>
     <body>
-
         <header class="colorHeader">
             <nav class="navbar navbar-expand-lg">
-                <div class="row m-0 justify-content-around">
-                    <a href="../index.html"class="col-7 col-md-3"><img class="navbar-brand w-100 ps-3 me-5" src="../assets/img/logoAvion.png" alt="Logo del Aeroclub Roma"></a>
+                <div class="row m-0 justify-content-around w-100">
+                    <a href="../index.html"class="col-7 col-md-3"><img class="navbar-brand w-100 ps-3 me-5  animate__animated animate__lightSpeedInRight" src="../assets/img/logoAvion.png" alt="Logo del Aeroclub Roma"></a>
                     <button class="navbar-toggler colorBurger col-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon burger"></span>
                     </button>
                     <div class="collapse navbar-collapse col-3 fs-4" id="navbarSupportedContent">
                         <ul class="navbar-nav me-auto mb-2 mb-lg-0 w-100 justify-content-around">
-                            <li class="nav-item colorListItem">
+                            <li class="nav-item hover-link">
                                 <a class="nav-link linkColor fw-bolder" href="../index.html">Inicio</a>
                             </li>
-                            <li class="nav-item colorListItem">
+                            <li class="nav-item hover-link">
                                 <a class="nav-link linkColor fw-bolder" href="./aeronaves.html">Aeronaves</a>
                             </li>
-                            <li class="nav-item colorListItem">
+                            <li class="nav-item hover-link">
                                 <a class="nav-link linkColor fw-bolder" href="./nosotros.html">Nosotros</a>
                             </li>
-                            <li class="nav-item colorListItem">
-                                <a class="nav-link linkColor fw-bolder" href="./ubicacion.html">Ubicacion</a>
+                            <li class="nav-item hover-link">
+                                <a class="nav-link linkColor fw-bolder" href="./ubicacion.html">Ubicación</a>
                             </li>
-                            <li class="nav-item colorListItem">
-                                <a class="nav-link linkColor fw-bolder" href="#">Unete!</a>
+                            <li class="nav-item hover-link">
+                                <a class="nav-link linkColor fw-bolder" href="#">¡Únete!</a>
                             </li>
                         </ul>
                     </div>
                 </div>
             </nav>
         </header>
-
         <main class="fondo">
-            <h1 class="grisTitulo p-2">Comienza tu carrera aeronautica con nostros!</h1>
+            <h1 class="grisTitulo p-4 mb-4 f">¡Comienza tu carrera aeronáutica con nosotros!</h1>
+            <!-- Seccion con el formulario de admision.-->
             <div class="row container-fluid">
-                <div class="col-10 col-md-5 m-auto mb-3 mt-2">
-                    <form class="textoClaro card p-3 text-center" action="">
-                        <h2 class="text-center p-3">Formulario de Admision: </h2>
+                <div class="col-10 col-md-5 m-auto mb-5 mt-2">
+                    <form class="textoClaro card p-3 text-center" action="../pages/404.html" method="post">
+                        <h2 class="text-center p-3">Formulario de Admisión: </h2>
                         <label class="card-text p-2"for="nombre">Nombre</label>
                         <input type="text" name="nombre" id="nombre"placeholder="Nombre" class="w-75 m-auto  p-2">
                         <label class="card-text p-2"for="apellido">Apellido</label>
@@ -68,12 +72,13 @@
                         <input type="submit" value="Enviar!" class="btn w-50 p-3 mb-3 mt-3 m-auto text-white">
                     </form>
                 </div> 
-                <div class="col-10 col-md-5 mb-3 mt-2 m-auto">
+                <!-- Seccion con la card con la recomendacion-->
+                <div class="col-10 col-md-5 m-auto mb-5 mt-2">
                     <div class="card h-100">
-                        <img src="../assets/img/capitan.jpg" alt="Imagen del Capitan Sully Sullenberger" class="w-50 m-auto">
-                        <div class="card-body textoClaro">
-                            <h3 class="card-title">Sully Sullenberger</h3>
-                            <p class="card-text">"Hoy, gracias al conocimiento ganado en esta escuela soy comandante en una de las principales Aerolíneas del mundo."</p>
+                        <img src="../assets/img/capitan.webp" alt="Imagen del Capitan Sully Sullenberger" class="w-50 m-auto pt-3 pb-3" loading="lazy">
+                        <div class="card-body textoClaro text-center">
+                            <h3 class="card-title mt-3">Sully Sullenberger</h3>
+                            <p class="card-text w-75 m-auto mt-3">"Hoy, gracias al conocimiento ganado en esta escuela soy comandante en una de las principales Aerolíneas del mundo."</p>
                         </div>
                     </div>
                 </div>
@@ -90,19 +95,18 @@
                         <p>Email:info@aeroclubroma.it</p>
                     </section>
                     <section class="order-1 order-md-2 col-md-3 p-4">
-                        <h3 class="ms-3 text-center">Encuentranos en nuestras redes sociales</h3>
-                            <section  class="d-flex justify-content-around">
-                                <a href="404.html"><img src="../assets/img/facebook.png" alt="Logo Facebook" class="p-1"></a>
-                                <a href="404.html"><img src="../assets/img/instagram.png" alt="Logo Instagram" class="p-1"></a>
-                                <a href="404.html"><img src="../assets/img/linkedin.png" alt="Logo LinkedIn" class="p-1"></a>
-                                <a href="404.html"><img src="../assets/img/twitter.png" alt="Logo Twitter" class="p-1"></a>
-                            </section>
-                        <a href="404.html"><img src="../assets/img/whatsapp.png" alt="Logo WhatsApp" class="position-fixed bottom-0 end-0 mb-3 me-3"></a>
-                    </section>
-                    
+                        <h3 class="ms-3 text-center fs-4">Encuéntranos en nuestras redes sociales</h3>
+                        <section  class="d-flex justify-content-around">
+                            <a href="https://www.facebook.com" target="_blank"><i class="fa-brands fa-facebook fa-3x"></i></a>
+                            <a href="https://www.instagram.com" target="_blank"><i class="fa-brands fa-instagram fa-3x"></i></a>
+                            <a href="https://www.linkedin.com" target="_blank"><i class="fa-brands fa-linkedin fa-3x"></i></a>
+                            <a href="https://www.twitter.com" target="_blank"><i class="fa-brands fa-twitter fa-3x"></i></a>
+                        </section>
+                        <a href="https://web.whatsapp.com" target="_blank"><i class="fa-brands fa-whatsapp position-fixed bottom-0 end-0 mb-3 me-3 fa-4x"></i></a>
+                    </section>     
                     <section class="col-md-3 p-4 order-2 order-md-3">
-                        <form action="" class="d-flex flex-column ms-3 me-3">
-                            <label for="newsletter" class="align-self-center mb-2"> Suscribete a nuestro boletin!</label>
+                        <form action="./pages/404.html" class="d-flex flex-column ms-3 me-3" method="post">
+                            <label for="newsletter" class="align-self-center mb-2">¡Suscríbete a nuestro boletín!</label>
                             <input type="email" name="newsletter" id="newsletter" placeholder="miEmail@email.com">
                             <input class="btn suscribirse fw-bold mt-3 w-50 align-self-center" type="submit" value="Suscribirse">
                         </form>

@@ -1,0 +1,45 @@
+/* Main index */
+main{
+    .presentacion{
+        background-image: url(../assets/img/fondo.png);
+        background-color: map-get($colores,transparencia);;
+        background-blend-mode: overlay;
+        background-position-x: $posicion-center;
+        height: 30rem;
+        .sombra{
+            text-shadow: 2px 2px 2px $color-oscuro;
+            color: map-get($colores,texto-claro);
+        }
+        .titulo{
+            font-size: map-get($textos,titulo-mobile);
+        }
+    }
+    .link{
+        text-decoration: none;
+        color: map-get($colores,link);;
+    }
+    .tamanio{
+        font-size:map-get($textos,presentacion-mobile);
+    }
+    hr{
+        color:map-get($colores,oscuro);
+        background-color:map-get($colores,oscuro);
+    }
+     /* Media queries index*/
+
+    @media screen and (min-width: 650px){
+        .presentacion{
+            background-size: cover;
+            background-position: $posicion-center;
+            background-attachment: fixed;
+            height:$t-100vh;
+            .titulo{
+                font-size: map-get($textos,titulo);
+            }
+        }
+        .tamanio{
+            font-size: map-get($textos,presentacion);
+        }
+    }
+}
+
