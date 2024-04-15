@@ -6,4 +6,11 @@ footer{
         background-color:map-get($colores,background);
         color:map-get($colores,oscuro);
     }
+    i{
+        color:map-get($colores,texto-claro);   
+    }
+    .fa-whatsapp{
+        color:map-get($colores,whatsapp);
+    }
 }
+    
